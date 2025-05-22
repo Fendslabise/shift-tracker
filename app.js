@@ -77,7 +77,7 @@ function authMiddleware(req, res, next) {
 }
 
 app.get('/', (req, res) => {
-  res.render('index')
+  res.redirect('/dashboard')
 })
 
 // Affiche le formulaire d'inscription
