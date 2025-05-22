@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "sass": "sass --watch scss/main.scss public/styles.css",
+    "sass": "sass scss/main.scss public/styles.css",
+    "sass:dev": "sass --watch scss/main.scss public/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
