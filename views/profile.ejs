@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mon profil</title>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <form action="/profile" method="POST">
+    <h2>Mon profil</h2>
+    <input type="text" name="nom" placeholder="Nom" value="<%= profile?.nom || '' %>" required />
+    <input type="text" name="prenom" placeholder="Prénom" value="<%= profile?.prenom || '' %>" required />
+    <input type="text" name="address" placeholder="Adresse" value="<%= profile?.address || '' %>" required />
+    <input type="tel" name="phone" placeholder="Téléphone" value="<%= profile?.phone || '' %>" required />
+    <input type="email" name="email" placeholder="Adresse mail" value="<%= profile?.email || '' %>" required />
+    <input type="text" name="siret" placeholder="Numéro de SIRET" value="<%= profile?.siret || '' %>" required />
+    <input type="text" name="rib" placeholder="RIB" value="<%= profile?.rib || '' %>" required />
+    <button type="submit">Enregistrer</button>
+    <div style="text-align:center;"><a href="/dashboard">← Retour</a></div>
+  </form>
+</body>
+</html>

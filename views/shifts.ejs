@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajouter mes heures</title>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <form action="/shifts" method="POST">
+    <h2>Ajouter un shift</h2>
+    <label>Date :</label>
+    <input type="date" name="date" required />
+
+    <label>Heure de début :</label>
+    <input type="time" name="start" required />
+
+    <label>Heure de fin :</label>
+    <input type="time" name="end" required />
+
+    <button type="submit">Enregistrer</button>
+    <div class="back">
+      <a href="/dashboard">← Retour au dashboard</a>
+    </div>
+  </form>
+</body>
+</html>

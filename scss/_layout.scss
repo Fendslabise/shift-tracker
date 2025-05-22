@@ -1,0 +1,21 @@
+body {
+  font-family: $font;
+  background-color: $bg;
+  padding: 2rem;
+  color: $text;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: $white;
+  padding: 2rem;
+  border-radius: $radius;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: $primary;
+}

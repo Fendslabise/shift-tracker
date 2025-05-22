@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Modifier un shift</title>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <form action="/shifts/edit/<%= shift.id %>" method="POST">
+    <h2>Modifier ce shift</h2>
+    <label>Date :</label>
+    <input type="date" name="date" value="<%= shift.date %>" required />
+
+    <label>Heure de début :</label>
+    <input type="time" name="start" value="<%= shift.start %>" required />
+
+    <label>Heure de fin :</label>
+    <input type="time" name="end" value="<%= shift.end %>" required />
+
+    <button type="submit">Enregistrer les modifications</button>
+    <div class="back">
+      <a href="/dashboard">← Retour au dashboard</a>
+    </div>
+  </form>
+</body>
+</html>

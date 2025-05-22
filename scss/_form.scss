@@ -1,0 +1,37 @@
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: $primary;
+}
+
+button {
+  background: $primary;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: none;
+
+
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
